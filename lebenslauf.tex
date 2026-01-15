@@ -69,7 +69,7 @@
 
 
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{2019picture-scaled}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
@@ -92,36 +92,38 @@
 
 \section{Bildung}
 \cventry{2011--2019}{Abitur}{Landrat-Lucas-Gymnasium}{Leverkusen}{\textit{Abschlussnote 1.0}}{Bilingual Pfad bis zur Oberstufe, Engagement mit MINT-Kursen}  % arguments 3 to 6 can be left empty
-\cventry{2019--2026}{Bachelor}{Technische Hochschule Köln}{Gummersbach}{\textit{Abschlussnote 1.3?}}{ Allgemeine Informatik}
+\cventry{2019--2026}{Bachelor}{Technische Hochschule Köln}{Gummersbach}{\textit{Abschlussnote 1.3}}{ Allgemeine Informatik in dualem Studium}
 
 \section{Bachelorarbeit}
 \cvitem{Titel}{\emph{Active Learning Framework for a Meta-Model to Predict Concentrations of Pesticides in Groundwater}}
 \cvitem{Betreuer}{Prof. Dr. Daniel Gaida}
 \cvitem{Beschreibung}{Grundwasserkonzentrationen konnten vorher bereits langsam ohne Automatisierung mit mechanistischen Modellen vorhergesagt werden. Diese Arbeit erstellt ein AL-Modell, welches automatisiert Konzentrationen in Echtzeit mit akzeptabler Genauigkeit vorhersagen kann.}
 
+\section{AWS Zertifizierungen}
+\cvitem{AI Practitioner}{Verifizierungscode: 55a3993e0bfe4074b79fe95b5ca190c8}
+\cvitem{Developer - Associate}{Verifizierungscode: 60b8bf2390f64e9bbe6c55ae14642fb9}
+\cvitem{Cloud Practitioner}{Verifizierungscode: PG6MTCY18NBQQ4GJ}
+
+
 \section{Berufserfahrung}
 \cventry{2019--2023}{Praktikant}{DEVK}{Köln}{}{Arbeit im Dualen Studium zur TH Köln.\newline{}
 Projekte:
 \begin{itemize}
 \item Erstellung von aktualisierten Linux und Windows Isos mit Packer
-\item Automatisches Erstellen von Seiten in Confluence
-\item Erweitern eines online Admininterfaces für eine Datenbankanwendung
-\item Modernisierung von Legacy Anwendungen, inklusive Testabdeckung
-  \item Automatisierung eines manuellen Prozesses auf einem dedizierten Server
-  \item Entwickeln einer Testumgebung für multi-Server Anwendungen mit Docker
+%\item Automatisches Erstellen von Seiten in Confluence aus einem dynamischem JSON Format
+\item Erweitern eines online Admininterfaces für eine Spring Boot Datenbankanwendung
+%\item Modernisierung von Legacy Anwendungen, inklusive Testabdeckung
+  \item Halbtagsjob einer Abteilung in einen One-Click Prozess umgewandelt, indem er auf einen Server ausgelastet wurde statt manuell ausgeführt wird
+  \item Entwickeln einer Testumgebung für multi-Server Anwendungen wie eine interne PKI mit Docker und Docker Compose
 \end{itemize}}
 
-\cventry{2024--2025}{Prakikant}{Bayer AG}{Monheim}{}{
+\cventry{2024--2025}{Praktikant}{Bayer AG}{Monheim}{}{
 Projekte:
 \begin{itemize}
 \item Automatisierung des regulatorischen Modells PELMO
-\item Erstellung eines ML Meta-Modells von PELMO für großflächiges Scanning
+\item Ermögliche großflächiges Scanning mit einem Echtzeit ML Meta-Modell statt den 5 Sekunden von PELMO mit RMSE von einer halben Größenordnung
 \end{itemize}}
 
-\section{Zertifizierungen}
-\cvitem{AI Practitioner}{Verifizierungscode: 55a3993e0bfe4074b79fe95b5ca190c8}
-\cvitem{Developer - Associate}{Verifizierungscode: 60b8bf2390f64e9bbe6c55ae14642fb9}
-\cvitem{Cloud Practitioner}{Verifizierungscode: PG6MTCY18NBQQ4GJ}
 
 
 
@@ -131,49 +133,10 @@ Projekte:
 
 
 \section{Computer Skills}
-%% Skill matrix as an alternative to rate one's skills, computer or other.
+\cvskilllegend*[1em]{}
 
-%% Adjusts width of skill matrix columns. 
-%% Usage \setcvskillcolumns[<width>][<factor>][<exp_width>]
-%% <width>, <exp_width> should be lengths smaller than \textwidth, <factor> needs to be between 0 and 1.
-%% Examples:
-% \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
-% \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
-% \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
-% \setcvskillcolumns[][0.45][\widthof{``Year''}]%
-% \setcvskillcolumns[\widthof{``Languag''}][0.48][]
-% \setcvskillcolumns[\widthof{``Languag''}]%
+\cvskillhead[-0.1em]
 
-%% Adjusts width of legend columns. Usage \setcvskilllegendcolumns[<width>][<factor>]
-%% <factor> needs to be between 0 and 1. <width> should be a length smaller than \textwidth
-%% Examples:
-% \setcvskilllegendcolumns[][0.45]
-% \setcvskilllegendcolumns[\widthof{``Legend''}][0.45]
-% \setcvskilllegendcolumns[0ex][0.46]% this is usefull for the banking style
-
-%% Add a legend if you are using \cvskill{<1-5>} command or \cvskillentry
-%% Usage \cvskilllegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
-% \cvskilllegend % insert default legend without lines
-\cvskilllegend*[1em]{}% adjust post spacing
-% \cvskilllegend*{Legend}%  Alternatively add a description string
-%% adjust the legend entries for other languages, here German
-% \cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
-
-%% Alternative legend style with the first three skill levels in one column
-%% Usage \cvskillplainlegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
-% \setcvskilllegendcolumns[][0.6]%  works for classic, casual, banking
-% \setcvskilllegendcolumns[][0.55]%  works better for oldstyle and fancy
-% \cvskillplainlegend{}
-% \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
-
-%% Add a head of the skill matrix table with descriptions.
-%% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
-\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
-%% Adjust head of the skill matrix for other languages
-% \cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
-
-%% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
-%% Example usages:
 \cvskillentry*{Sprachen:}{4}{Python}{5}{Momentan meine meistgenutzte Sprache.}
 \cvskillentry{}{4}{JVM}{8}{Hauptsächlich Java und Kotlin}
 \cvskillentry{}{3}{C}{2}{Multithreading und Shared Memory}
@@ -185,15 +148,10 @@ Projekte:
 \cvskillentry*{OS:}{3}{Linux}{8}{Erfahrung mit RedHat und Debian Distros}
 \cvskillentry{}{2}{ROS}{1}{Projekt mit dem TurtleBot 4}
 
-% notice the use of the starred command and the optional
-%% \cvskill{<0-5>} command
-% \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
-
 
 \section{Hobbies}
 \cvitem{Schach}{Schachverein Springer 70 Hitdorf}
 \cvitem{Rudern}{RTHC Bayer Leverkusen e.V.}
-%\cvitem{Lesen}{}
 
 
 
@@ -217,28 +175,28 @@ Projekte:
 \clearpage
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
 
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
 
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
 
-Albert Einstein discovered that $e=mc^2$ in 1905.
+%Albert Einstein discovered that $e=mc^2$ in 1905.
 
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
 
-\makeletterclosing
+%\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+%}
+
 \end{document}
-
-
 %% end of file `template.tex'.
 
